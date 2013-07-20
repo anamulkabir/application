@@ -1,0 +1,723 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_dark"
+     >     
+     <!-- Starting Ploting Custom Action bar -->
+     <LinearLayout
+            android:id="@+id/lyactionbarpane"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@android:drawable/screen_background_light_transparent"
+             >
+       <!-- Define View of  Logo and Title Inside Custom Action Bar  -->
+       <LinearLayout
+            android:id="@+id/btnlogopane"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+             
+             <!-- Define Application Logo -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:contentDescription=""
+                 android:src="@drawable/ic_booster" />
+            <!-- Define Application Name -->
+            <TextView 
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/lightblue"                
+                android:textSize="12sp"   
+                android:layout_marginLeft="4dip"  
+                android:textStyle="bold"                                         
+                android:text="@string/lblbooster"
+             />
+            </LinearLayout>    
+              <ImageView
+                  android:id="@+id/imgplaystoreactionbar"
+                android:layout_width="fill_parent"                
+                android:layout_height="35dip" 
+                android:layout_gravity="fill_horizontal|right"                                
+                android:layout_marginLeft="50dip"                             
+                 android:src="@drawable/ic_playstore" />
+             
+      </LinearLayout>
+      <!-- End of Ploting Custom Action bar -->
+      
+      <LinearLayout
+            android:id="@+id/lyaddbarpane"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="horizontal"   
+            android:layout_marginTop="1dip"         
+            android:layout_below="@+id/lyactionbarpane"
+            android:background="@drawable/add_baner"
+             >
+       	<ImageView
+                android:layout_width="fill_parent"                
+                android:layout_height="fill_parent" 
+                android:layout_gravity="fill_vertical"               
+                 android:src="@drawable/add_baner" />
+      </LinearLayout>
+<ScrollView 
+    android:id="@+id/lybodypane"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:layout_below="@+id/lyaddbarpane" >
+      <LinearLayout
+            android:id="@+id/lymainbody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"> 
+	   <LinearLayout
+            android:id="@+id/lymobairwifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dip"            
+             >
+        <LinearLayout
+            android:id="@+id/btnmobilenetwork"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/btncustomadd" >
+            <!-- Mobile Network Heading -->
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:layout_gravity="fill_horizontal"
+                android:textColor="@color/lightblue"                
+                android:textSize="12sp"
+                android:layout_marginTop="5dip"
+                android:text="@string/lblmobilenetwork"
+             />            
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_mobilenetwork" />
+            <TextView android:id="@+id/txtmobilenetworkstatus"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                 android:gravity="center_horizontal"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="10dip"
+                android:textColor="@color/red" 
+                android:textStyle="bold"
+                android:text="@string/lbloff"
+                />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/btnairplane"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/btncustomadd" >
+            <!-- Mobile Network Heading -->
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_gravity="fill_horizontal"
+                android:maxLines="2"     
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"           
+                android:textColor="@color/lightblue"                
+                android:textSize="12sp"
+                android:layout_marginTop="5dip"
+                android:text="@string/lblairplane"
+             />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_plane" />
+            <TextView android:id="@+id/txtairplanestatus"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                 android:gravity="center_horizontal"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="10dip"
+                android:textColor="@color/red" 
+                android:textStyle="bold"
+                android:text="@string/lbloff"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnwifi"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:orientation="vertical"            
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="10dip"            
+            android:background="@drawable/btncustomadd" >
+            <!-- Wifi Heading -->
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_gravity="fill_horizontal"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:textColor="@color/lightblue"                
+                android:textSize="12sp"
+                android:layout_marginTop="5dip"
+                android:text="@string/lblwifi"
+             />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_wifi" />
+            <TextView android:id="@+id/txtwifistatus"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                 android:gravity="center_horizontal"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="10dip"
+                android:textColor="@color/red" 
+                android:textStyle="bold"
+                android:text="@string/lbloff"
+                />           
+        </LinearLayout>
+        </LinearLayout>        
+          <!-- End of ploting 3 buttons -->
+          <!-- Start Ploting Booster button and animation -->          
+          <LinearLayout
+            android:id="@+id/lybooster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dip">
+         <LinearLayout
+            android:id="@+id/btnbooster"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"           
+            android:background="@drawable/btncustomadd" >
+            <!-- Booster Heading -->
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_gravity="fill_horizontal"
+                android:textColor="@color/lightblue"                
+                android:textSize="12sp"
+                android:layout_marginTop="5dip"
+                android:text="@string/lblbooster"
+             />
+            
+            <ImageView
+                android:id="@+id/imgnetworksearch"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_radar1" />
+            <TextView android:id="@+id/txtwifi"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                 android:gravity="center_horizontal"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="8dip"
+                android:textColor="@color/green" 
+                android:textStyle="bold"
+                android:text="@string/lblstart"
+                />           
+        </LinearLayout>
+        <!-- Ploting animaiton section which initially hidden(gone) -->
+        <LinearLayout
+            android:id="@+id/btnboosteranim"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:background="@drawable/btncustomadd" >
+            <!-- Mobile Network Heading -->
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_gravity="fill_horizontal"
+                android:textColor="@color/lightblue"                
+                android:textSize="12sp"
+                android:layout_marginTop="5dip"
+                android:text="@string/lblbooster"
+             />
+            <ImageView
+                android:id="@+id/imgnetworksearchanim"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/animnetworknavigator" />
+            <TextView android:id="@+id/txtwifianim"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                 android:gravity="center_horizontal"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="8dip"
+                android:textColor="@color/green" 
+                android:textStyle="bold"
+                android:text="@string/lblrunning"
+                />
+           
+        </LinearLayout>
+        <!-- Section to show informaiton/static/dynamic message -->
+        <LinearLayout
+            android:id="@+id/btnsearchinfo"
+            android:layout_width="260dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dip"
+            android:visibility="gone"
+            android:background="@drawable/btncustomadd" >
+            <TextView 
+                android:id="@+id/txtnetworkmasterinfoanim"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_gravity="fill_horizontal"
+                android:textColor="@color/blue"                
+                android:textSize="14sp"
+                android:layout_marginTop="5dip"
+                android:text="@string/txtanimmasterinfo1"
+             />
+            <TextView android:id="@+id/txtnetworksearchstaticinfoanim"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                 android:gravity="center_horizontal"
+                 android:maxLines="3"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="10dip"
+                android:textColor="@color/lightblue" 
+                android:text="@string/txtanimstaticinfo"
+                />
+        </LinearLayout>
+        </LinearLayout>
+        <!-- End of Booster button animation section -->
+       <!-- It is used to handle lower part of booster button --> 
+        <LinearLayout
+            android:id="@+id/btnblank"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"            
+             >
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <!-- Startting Menu list ploting -->
+<LinearLayout
+    android:id="@+id/menulist"
+    android:layout_height="match_parent"
+    android:layout_width="240dip"
+    android:background="@color/darkgray" 
+    android:orientation="vertical"
+    android:visibility="gone">
+       <LinearLayout            
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical|fill_horizontal"
+            android:gravity="center"
+            android:background="@color/lightbluemenu"
+            >
+
+            <!-- Define Menu Header Main -->
+            <TextView 
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"                
+                android:textSize="10sp"                                              
+                android:text="@string/lblmenuheadermain"
+             />
+            </LinearLayout>
+            
+       <LinearLayout
+            android:id="@+id/btnmenuitem1"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/abs__ab_bottom_solid_inverse_holo"
+             >
+             
+             <!-- Define MenuItem1  Logo -->
+            <ImageView
+                android:id="@+id/imgmenuitem1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription=""
+                android:layout_margin="4dip"
+                 android:src="@drawable/ic_menuitem1" />
+            <!-- Define MenuItem1 Text -->
+            <TextView 
+                android:id="@+id/txtmenuitem1"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"                
+                android:textSize="12sp"                                              
+                android:text="@string/lblmenuitem1"
+             />
+            </LinearLayout>
+            <LinearLayout
+            android:id="@+id/btnmenuitem2"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/abs__ab_bottom_solid_inverse_holo"
+             >
+             
+             <!-- Define MenuItem2  Logo -->
+            <ImageView
+                android:id="@+id/imgmenuitem2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription=""
+                android:layout_margin="4dip"
+                 android:src="@drawable/ic_menuitem2" />
+            <!-- Define MenuItem2 Text -->
+            <TextView 
+                android:id="@+id/txtmenuitem2"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"                
+                android:textSize="12sp"                                              
+                android:text="@string/lblmenuitem2"
+             />
+            </LinearLayout>
+            
+             <LinearLayout            
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical|fill_horizontal"
+            android:gravity="center"
+            android:background="@color/lightbluemenu"
+            >
+
+            <!-- Define Menu Header Extra-->
+            <TextView 
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"                
+                android:textSize="10sp"                                              
+                android:text="@string/lblmenuheaderextra"
+             />
+            </LinearLayout>
+            <!-- Define menuitem3 block-->
+              <LinearLayout
+            android:id="@+id/btnmenuitem3"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/abs__ab_bottom_solid_inverse_holo"
+             >
+             
+             <!-- Define MenuItem3  Logo -->
+            <ImageView
+                android:id="@+id/imgmenuitem3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription=""
+                android:layout_margin="4dip"
+                 android:src="@drawable/ic_menuitem3" />
+            <!-- Define MenuItem3 Text -->
+            <TextView 
+                android:id="@+id/txtmenuitem3"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"                
+                android:textSize="12sp"                                              
+                android:text="@string/lblmenuitem3"
+             />
+            </LinearLayout>
+            <!-- Define menuitem4 block -->
+            <LinearLayout
+            android:id="@+id/btnmenuitem4"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/abs__ab_bottom_solid_inverse_holo"
+             >
+             
+             <!-- Define MenuItem4  Logo -->
+            <ImageView
+                android:id="@+id/imgmenuitem4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription=""
+                android:layout_margin="4dip"
+                 android:src="@drawable/ic_menuitem4" />
+            <!-- Define MenuItem4 Text -->
+            <TextView 
+                android:id="@+id/txtmenuitem4"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"                
+                android:textSize="12sp"                                              
+                android:text="@string/lblmenuitem4"
+             />
+            </LinearLayout>
+             <!-- Define Menu Header Fitness &  Exercise -->
+             <LinearLayout            
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical|fill_horizontal"
+            android:gravity="center"
+            android:background="@color/lightbluemenu"
+            >
+            <TextView 
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"                
+                android:textSize="10sp"                                              
+                android:text="@string/lblmenuheaderfitnessapp"
+             />
+            </LinearLayout>
+            <!-- Define menuitem5 block -->
+            <LinearLayout
+            android:id="@+id/btnmenuitem5"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/abs__ab_bottom_solid_inverse_holo"
+             >
+             
+             <!-- Define MenuItem5  Logo -->
+            <ImageView
+                android:id="@+id/imgmenuitem5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription=""
+                android:layout_margin="4dip"
+                 android:src="@drawable/ic_menuitem4" />
+            <!-- Define MenuItem5 Text -->
+            <TextView 
+                android:id="@+id/txtmenuitem4"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"                
+                android:textSize="12sp"                                              
+                android:text="@string/lblmenuitem4"
+             />
+            </LinearLayout>
+            <!-- Define menuitem6 block -->
+            <LinearLayout
+            android:id="@+id/btnmenuitem6"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/abs__ab_bottom_solid_inverse_holo"
+             >
+             
+             <!-- Define MenuItem6  Logo -->
+            <ImageView
+                android:id="@+id/imgmenuitem6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription=""
+                android:layout_margin="4dip"
+                 android:src="@drawable/ic_menuitem4" />
+            <!-- Define MenuItem6 Text -->
+            <TextView 
+                android:id="@+id/txtmenuitem6"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"                
+                android:textSize="12sp"                                              
+                android:text="@string/lblmenuitem6"
+             />
+            </LinearLayout>
+   
+    
+</LinearLayout>
+
+<!-- Starting block to plot bottom bar  -->
+ <LinearLayout
+            android:id="@+id/lybottombar"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|right"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darkgray1"
+             >
+   <LinearLayout
+            android:id="@+id/btnlivecomment"
+            android:layout_width="75dp"
+            android:layout_height="38dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="1dip" >
+             
+             <!-- Define Live Comment  Logo -->
+            <ImageView
+                android:id="@+id/imglivecomment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription=""
+                android:layout_marginRight="2dip"
+                 android:src="@drawable/ic_comment" />
+            <!-- Define Live Comment Name -->
+            <TextView 
+                android:id="@+id/txtlivecomment"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"                
+                android:textSize="12sp"                                              
+                android:text=""
+             />
+            </LinearLayout>
+    <LinearLayout
+            android:id="@+id/btnlike"
+            android:layout_width="75dp"
+            android:layout_height="38dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/abs__ab_transparent_dark_holo"
+            >
+             
+             <!-- Define Like Logo -->
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription=""
+                android:layout_marginRight="2dip"
+                 android:src="@drawable/ic_like" />
+            <!-- Define Application Name -->
+            <TextView 
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"                
+                android:textSize="10sp"                                              
+                android:text="@string/lbllike"
+             />
+            </LinearLayout>  
+            
+    		 <LinearLayout
+            android:id="@+id/btnshare"
+            android:layout_width="70dp"
+            android:layout_height="38dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/abs__ab_transparent_dark_holo"
+            >
+             
+             <!-- Define Share Logo -->
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription=""
+                android:layout_marginRight="2dip"
+                 android:src="@drawable/ic_share" />
+            <!-- Define Application Name -->
+            <TextView 
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"                
+                android:textSize="10sp"                                              
+                android:text="@string/lblshare"
+             />
+            </LinearLayout> 
+            <LinearLayout
+            android:id="@+id/btncomment"
+            android:layout_width="85dp"
+            android:layout_height="38dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="1dip"
+            android:background="@drawable/abs__ab_transparent_dark_holo"
+            >
+             
+             <!-- Define Comment Logo -->
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription=""
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                 android:src="@drawable/ic_comment1" />
+            <!-- Define Application Name -->
+            <TextView 
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"                
+                android:layout_gravity="fill_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"                
+                android:textSize="10sp"                                              
+                android:text="@string/lblcomment"
+             />
+            </LinearLayout>   
+   
+             </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@android:drawable/dark_header"
+    android:scrollbars="vertical" 
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:layout_marginTop="10dip"  >
+    <TextView
+        android:id="@+id/lblregstudid"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="6pt" 
+        android:layout_marginLeft="2dip"
+        android:text="@string/id" />  
+
+         <EditText
+	   android:id="@+id/txt_reg_studid"
+	   android:enabled="true"
+	   android:layout_gravity="left"
+	   android:layout_below="@+id/lblregstudid"
+	   android:background="@android:drawable/editbox_background"
+	   android:textSize="6pt"
+	   android:singleLine="true"
+	   android:maxLength="12"	   
+	   android:layout_width="100dp"
+	   android:layout_height="wrap_content"
+	   android:layout_marginLeft="2dip"
+	   android:padding="2dp"
+	   android:hint=""/>
+        <EditText
+	   android:id="@+id/txt_reg_studname"
+	   android:layout_gravity="left"
+	   android:textSize="6pt"	   
+	   android:singleLine="true"
+	   android:layout_below="@+id/txt_reg_studid"
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:background="@android:drawable/editbox_background"
+	   android:padding="2dp"
+	   android:layout_marginLeft="2dip"
+	   android:hint="@string/studname"
+	    />
+
+ 	<EditText
+	   android:id="@+id/txt_reg_admdate"
+	   android:layout_gravity="left"
+	   android:textSize="6pt"
+	   android:singleLine="true"	   
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+	   android:layout_below="@+id/txt_reg_studname"
+	   android:background="@android:drawable/editbox_background"
+	   android:layout_marginLeft="2dip"
+	   android:hint="@string/admdate"
+	 />
+ 	<Spinner
+    android:id="@+id/ddl_semester"
+    android:layout_width="wrap_content"
+    android:layout_weight="1"
+    android:layout_toRightOf="@+id/txt_reg_admdate"
+    android:layout_alignTop="@+id/txt_reg_admdate"
+    android:background="@android:drawable/editbox_background"
+    android:layout_height="wrap_content" />
+ 	
+    <AutoCompleteTextView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/autocom_course"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:background="@android:drawable/editbox_background"
+  android:layout_below="@+id/ddl_semester"
+    android:hint="@string/course"
+    />
+    <Button android:id="@+id/courseadd"
+           android:layout_marginLeft="5dp" 
+           android:layout_width="wrap_content"
+           android:layout_height="35dp"
+           android:onClick="onCourseAddClick"
+           android:layout_toRightOf="@+id/autocom_course"
+    	   android:layout_alignTop="@+id/autocom_course"
+           android:text="Add" />
+ 	
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_reg_admdate"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content" android:orientation="horizontal" android:layout_below="@+id/autocom_course" >        
+ <ListView android:id="@+id/lv_registration" android:layout_width="wrap_content" android:layout_height="wrap_content"
+     android:scrollbars="vertical"  android:scrollbarAlwaysDrawVerticalTrack="true"
+  /> 
+  </LinearLayout> 
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content" android:orientation="horizontal" android:layout_below="@+id/layout_reg_admdate" >
+        <Button android:id="@+id/admsave"
+           android:layout_marginLeft="5dp" 
+           android:layout_width="100dp"
+           android:layout_height="35dp"
+           android:onClick="onClick"
+           android:text="@string/save" />
+        <Button android:id="@+id/admsearch"
+           android:layout_marginLeft="5dp" 
+           android:layout_width="100dp"
+           android:layout_height="35dp"
+           android:onClick="onSearchClick"
+           android:text="@string/search" />
+      
+        <Button android:id="@+id/admclear"
+           android:layout_marginLeft="5dp" 
+           android:layout_width="100dp"
+           android:layout_height="35dp"
+           android:onClick="onClearClick"
+           android:text="@string/add" />
+        </LinearLayout>
+     <TextView
+        android:id="@+id/lbl_reg_erro"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:textSize="6pt"        
+        android:layout_toRightOf="@+id/lblregstudid"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="2dip"
+        android:layout_marginLeft="2dip"
+        android:textColor="#AA0000"
+        android:text="" 
+         />
+
+</RelativeLayout>

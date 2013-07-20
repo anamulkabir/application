@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@android:drawable/dialog_frame"
+    android:layout_marginTop="10dip"  >
+    <TextView
+        android:id="@+id/labl_uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="7pt"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"        
+        android:text="@string/username" 
+         />
+    <EditText
+   android:id="@+id/txt_un"
+   android:layout_width="150dp"
+   android:layout_height="wrap_content"
+   android:background="@android:drawable/editbox_background"
+   android:layout_toRightOf="@id/labl_uname"
+   android:layout_alignBaseline="@id/labl_uname"/>
+    <TextView
+        android:id="@+id/labl_upass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="7pt"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/labl_uname"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"   
+         
+        android:text="@string/passwd" />
+     <EditText
+   android:id="@+id/txt_upass"
+   android:layout_width="150dip"
+   android:layout_height="wrap_content"
+   android:background="@android:drawable/editbox_background"
+   android:singleLine="true"
+   android:maxLines="15"
+   android:inputType="textPassword"
+   android:layout_alignLeft="@+id/txt_un"
+   android:layout_alignBaseline="@+id/labl_upass"
+   android:layout_below="@+id/txt_un"
+  
+   />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dip" 
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_upass"
+        android:layout_below="@+id/txt_upass"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/btn_default"        
+        android:text="@string/login"
+        />
+    <TextView
+        android:id="@+id/labl_erro"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:textSize="7pt"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="15dip"
+        android:textColor="#AA0000"
+        android:text="" 
+         />
+</RelativeLayout>

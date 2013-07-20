@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:orientation="vertical" android:background="#444444" android:layout_marginTop="10dp"  >    
+   <TextView
+        android:id="@+id/lblstudidpop"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textSize="6pt" 
+        android:layout_marginLeft="2dip"
+        android:text="@string/id" />  
+
+         <EditText
+	   android:id="@+id/txt_studidpop"
+	   android:enabled="false"
+	   android:layout_gravity="left"
+	   android:layout_below="@+id/lblstudidpop"
+	   android:background="@android:drawable/editbox_background"
+	   android:textSize="6pt"
+	   android:singleLine="true"
+	   android:maxLength="12"	   
+	   android:layout_width="100dp"
+	   android:layout_height="wrap_content"
+	   android:layout_marginLeft="2dip"
+	   android:padding="2dp"
+	   android:hint=""/>
+       <TextView
+        android:id="@+id/lblstudnamepop"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/txt_studidpop"
+        android:layout_marginLeft="2dp"
+        android:textSize="6pt"
+         android:text="@string/studname" 
+         android:focusable="true"
+         />
+        <EditText
+	   android:id="@+id/txt_studnamepop"
+	   android:layout_gravity="left"
+	   android:textSize="6pt"	   
+	   android:singleLine="true"
+	   android:layout_below="@+id/lblstudnamepop"
+	   android:layout_width="180dp"
+	   android:layout_height="wrap_content"
+	   android:background="@android:drawable/editbox_background"
+	   android:padding="2dp"
+	   android:layout_marginLeft="2dip"
+	   android:hint="@string/studname"
+	    />    
+	     <TextView
+        android:id="@+id/lblsexpop"    
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblstudnamepop"
+        android:layout_toRightOf="@+id/lblstudnamepop"
+        android:textSize="6pt"
+        android:layout_marginLeft="10dip"
+        android:text="@string/sex" 
+         />
+	   <Spinner android:id="@+id/ddlsexpop"
+       android:layout_width="fill_parent"       
+       android:layout_height="wrap_content"
+       android:spinnerMode="dialog"
+       android:layout_alignTop="@+id/txt_studnamepop"
+        android:layout_toRightOf="@+id/txt_studnamepop"
+       android:background="@android:drawable/editbox_background"
+	   android:layout_marginLeft="2dp"
+	   android:padding="2dp"	   
+       android:prompt="@string/ddlprompt" />
+      <TextView
+        android:id="@+id/lbldobpop"       
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:textSize="6pt"
+        android:layout_below="@+id/txt_studnamepop"        
+        android:layout_marginLeft="2dp"
+        android:text="@string/dob" 
+         />
+       
+       <EditText
+	   android:id="@+id/txt_dpdobpop"
+	   android:layout_gravity="left"
+	  android:textSize="6pt"	   
+	   android:singleLine="true"
+	   android:layout_width="160dp"
+	   android:layout_height="wrap_content"
+	   android:layout_below="@+id/lbldobpop"	   
+	   android:background="@android:drawable/editbox_background"
+	   android:padding="2dp"
+	   android:layout_marginLeft="2dp"	  
+	   android:ems="10"
+	   android:inputType="date"
+	   	   
+	   android:hint="@string/dob" 
+	    >
+        <requestFocus />
+        </EditText>
+   
+        <TextView
+        android:id="@+id/lbladmdtpop"       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lbldobpop"
+        android:layout_toRightOf="@+id/lbldobpop"
+        android:textSize="6pt"
+        android:layout_marginLeft="40dip"
+        android:text="@string/admdate"/> 
+        <EditText
+	   android:id="@+id/txt_admdatepop"
+	  android:layout_gravity="left"
+	  android:textSize="6pt"	   
+	   android:singleLine="true"
+	   android:layout_width="160dp"
+	   android:layout_height="wrap_content"
+	   android:layout_below="@+id/lbladmdtpop"	  
+	   android:layout_toRightOf="@+id/txt_dpdobpop" 
+	   android:background="@android:drawable/editbox_background"
+	   android:padding="2dp"
+	   android:layout_marginLeft="2dp"	  
+	   android:ems="10"
+	   android:inputType="date" 
+	   android:hint="@string/admdate"
+	 />
+        
+        <Button android:id="@+id/admsearchpop"
+           android:layout_marginLeft="5dp" 
+           android:layout_width="150dp"
+           android:layout_height="35dp"
+           android:layout_below="@+id/txt_dpdobpop"	
+           android:onClick="onSearchClickpop"
+           android:text="@string/search" />
+     <TextView
+        android:id="@+id/lbl_erropop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="6pt"
+        android:layout_below="@+id/admsearchpop"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="2dip"
+        android:layout_marginLeft="2dip"
+        android:textColor="#AA0000"
+        android:text="" 
+         />
+       
+
+<ListView android:id="@+id/lv_admission" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_below="@+id/lbl_erropop" 
+    android:scrollbars="vertical"  android:scrollbarAlwaysDrawVerticalTrack="true"
+  />   
+  <TextView
+        android:id="@+id/lbl_gag"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:textSize="6pt"
+        android:layout_marginRight="9dip"
+        android:layout_below="@+id/lv_admission"
+        android:layout_marginTop="2dip"
+        android:layout_marginLeft="2dip"
+        android:textColor="#AA0000"
+        android:text="" 
+         />
+
+ 
+
+</RelativeLayout>
+
+

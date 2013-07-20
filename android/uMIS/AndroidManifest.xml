@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.ennoviabd.com.umis"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="15" />
+  
+ <uses-permission android:name="android.permission.INTERNET" />
+ <uses-permission android:name="android.permission.CAMERA"/>
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity android:name=".LoginActivity" android:label="@string/app_name">
+         <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>   
+        </activity>
+        <activity
+            android:name=".UMISActivity"
+              >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdmissionActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.ennoviabd.admission" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+         <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Localite</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcomemsg">Welcome to Localite World</string>
+    <string name="searchbyqr">QR scan</string>
+
+</resources>

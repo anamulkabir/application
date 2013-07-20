@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"    
+    android:orientation="horizontal"        
+    >
+    
+		<TextView
+		android:id="@+id/txtvWeb"		
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:typeface="sans"
+		android:textSize="12sp"
+		android:maxWidth="160dip"
+				
+		/>
+		<TextView android:id="@+id/txtBookMarkid"
+		    android:layout_width="wrap_content" android:layout_height="5dp" android:visibility="invisible"  />
+		
+		<Button android:id="@+id/btnDdlDel"
+		    android:layout_width="20dip"
+		    android:layout_height="22dip"
+		    android:focusable="false"
+		    android:layout_alignParentRight="true"	    
+		    android:background="@drawable/ic_menu_trash_holo_light"
+		    /> 
+		     
+		
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:id="@+id/main_function" android:menuCategory="container" android:orderInCategory="1">
+        <item android:id="@+id/admission" android:title="Admission" android:orderInCategory="1" android:alphabeticShortcut="a" android:showAsAction="ifRoom|withText"></item>
+         <item android:id="@+id/registration" android:title="Registration" android:orderInCategory="2" android:alphabeticShortcut="r"></item>
+          <item android:id="@+id/Collection" android:title="Collection" android:orderInCategory="3" android:alphabeticShortcut="p"></item>
+    </group>
+  
+</menu>

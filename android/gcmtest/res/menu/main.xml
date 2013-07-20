@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    
+     >
+
+    <item
+        android:id="@+id/overflowmenus"        
+        android:orderInCategory="100"
+        android:icon="@drawable/abs__ic_menu_moreoverflow_normal_holo_dark"
+        android:showAsAction="collapseActionView"
+        android:title="Menue">
+        <menu >
+            <item
+        android:id="@+id/menusearch"
+        android:icon="@drawable/abs__ic_search"
+        android:showAsAction="ifRoom|withText"        
+        android:title="Menue"/>
+            <item
+        android:id="@+id/item1"
+        android:icon="@drawable/abs__ic_voice_search_api_holo_light"
+        android:showAsAction="ifRoom|withText"
+        android:title="Menue"/>            
+        </menu>
+        </item>
+    
+    
+
+</menu>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"    
+    android:orientation="horizontal"
+    android:padding="5dip"    
+    >
+    <!--  ListRow Left side status image -->
+    <LinearLayout android:id="@+id/llimgleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"> 
+        <ImageView
+            android:id="@+id/lstimgStatus"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:src="@drawable/circle_yellow"/> 
+    </LinearLayout>
+		<TextView
+		android:id="@+id/lstAlertnote"		
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@+id/llimgleft"
+        android:layout_toRightOf="@+id/llimgleft"		
+		android:textStyle="bold"
+		android:typeface="sans"
+		android:textSize="15sp"
+		android:maxWidth="180dip"
+				
+		/>
+		<TextView
+		android:id="@+id/lstAlertDT"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/lstAlertnote"
+		android:textSize="12sp"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@+id/llimgleft"
+		/>
+		<TextView android:id="@+id/lstEventid"
+		    android:layout_width="wrap_content" android:layout_height="5dp" android:visibility="invisible"  />
+		
+		<Button android:id="@+id/btnDdlDel"
+		    android:layout_width="20dip"
+		    android:layout_height="30dip"
+		    android:focusable="false"
+		    android:layout_alignParentRight="true"	
+		    android:layout_marginRight="8dip"    
+		    android:background="@drawable/ic_menu_trash_holo_light"
+		    /> 
+		     
+		
+</RelativeLayout>

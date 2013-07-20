@@ -1,0 +1,81 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.ennoviabd.generalservice.ApplicationValidation
+com.ennoviabd.generalservice.BuildConfig
+com.ennoviabd.generalservice.CalendarActivity:
+    public static final java.lang.String MIME_TYPE
+com.ennoviabd.generalservice.CalendarView:
+    private static final java.lang.String TAG
+    225:225:public boolean firstDay(int)
+    229:229:public boolean lastDay(int)
+    233:237:public void goToday()
+    240:240:public java.util.Calendar getDate()
+com.ennoviabd.generalservice.Cell:
+    private static final java.lang.String TAG
+com.ennoviabd.generalservice.ChargeMe:
+    public static final java.lang.String Provider_Name
+    public static final java.lang.String EVENT_IDN
+    public static final java.lang.String EVENT_NOTE
+    public static final java.lang.String EVENT_CATAGORY
+    public static final java.lang.String EVENT_EVENT_TYPE
+    public static final java.lang.String EVENT_NOTIFICATION
+    public static final java.lang.String EVENT_DESCRIPTION
+    public static final java.lang.String EVENT_LOCATION
+    public static final java.lang.String EVENT_PRIORITY
+    public static final java.lang.String EVENT_ALERT_DURATION
+    public static final java.lang.String EVENT_FROMDT
+    public static final java.lang.String EVENT_FROMTM
+    public static final java.lang.String EVENT_TODT
+    public static final java.lang.String EVENT_TOTM
+    public static final java.lang.String EVENT_REMIND
+    public static final java.lang.String EVENT_ATTACH_PERSON
+    public static final java.lang.String EVENT_DURATION
+    public static final java.lang.String EVENT_IS_REPEAT
+    public static final java.lang.String EVENT_STATUS
+    public static final java.lang.String CATAGORY_IDN
+    public static final java.lang.String CATAGORY_NAME
+    public static final java.lang.String CATAGORY_ALERT_TYPE
+    private static final int EVENTS
+    private static final int EVENT_ID
+    private static final int CATAGORY
+    private static final int CATAGORY_ID
+    private static final int V_DAYTIME_ALERT
+    private static final int V_TIME_ALERT
+    private static final java.lang.String DATABASE_NAME
+    private static final java.lang.String DATABASE_TABLE_EVENT
+    private static final java.lang.String DATABASE_TABLE_CATAGORY
+    private static final java.lang.String DATABASE_VIEW_DAYTIME
+    private static final java.lang.String DATABASE_VIEW_TIME
+    private static final int DATABASE_VERSION
+    private static final java.lang.String TABLE_EVENT_CREATE
+    private static final java.lang.String TABLE_CATAGORY_CREATE
+    private static final java.lang.String INSCATAGORY1
+    private static final java.lang.String INSCATAGORY2
+    private static final java.lang.String INSCATAGORY3
+    private static final java.lang.String VIEW_DATETIMELIST
+    private static final java.lang.String VIEW_TIMELIST
+com.ennoviabd.generalservice.MyEvent:
+    int hour
+    int minute
+    int mYear
+    int mMonth
+    int mDay
+    java.lang.String eventStatus
+    static final int TIME_DIALOG_ID
+    static final int DATE_DIALOG_ID
+    static final int TIME_DIALOG_ID_T
+    55:59:private static java.lang.String LPad(java.lang.String,java.lang.String,int)
+com.ennoviabd.generalservice.MyWidgetProvider:
+    private static final java.lang.String ACTION_CLICK
+com.ennoviabd.generalservice.R
+com.ennoviabd.generalservice.R$array
+com.ennoviabd.generalservice.R$attr
+com.ennoviabd.generalservice.R$color
+com.ennoviabd.generalservice.R$dimen
+com.ennoviabd.generalservice.R$drawable
+com.ennoviabd.generalservice.R$id
+com.ennoviabd.generalservice.R$layout
+com.ennoviabd.generalservice.R$menu
+com.ennoviabd.generalservice.R$string
+com.ennoviabd.generalservice.R$style
+com.ennoviabd.generalservice.R$xml

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, UMISActivity!</string>
+    <string name="app_name">UMIS</string>
+    <string name="ddlprompt">Please select one</string>
+    <string name="id">ID</string>
+    <string name="username">User Name</string>
+    <string name="passwd">Password</string>
+    <string name="studname">Student Name</string>
+    <string name="fname">Father Name</string>
+    <string name="sex">Sex</string>
+    <string name="dob">Date of Birth</string>
+    <string name="address">Address</string>
+    <string name="admdate">Admission Date</string>
+    <string name="remarks">Remarks</string>
+    <string name="phone">Phone(+XX-XXXX)</string>
+    <string name="course">Course Name</string>
+    <string name="des">Description</string>
+    <string name="payment">Payment</string>
+    <string name="dueamnt">Due Amount</string>
+    <string name="amnt">Amount</string>
+    <string name="transtype">Transaction Type</string>
+    <string-array name="sex" >
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="login">Login</string>
+    <string name="update">Update</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="add">Add/Clear</string>
+    <string-array name="semesters" >
+        <item>Summer2012</item>
+        <item>Fall2012</item>
+        <item>Spring2013</item>
+    </string-array>
+    <string-array name="course" >
+        <item>cse-101</item>
+        <item>cse-102</item>
+        <item>eng-099</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ennoviabd.app.earthquakedemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+    <uses-permission xmlns:android="http://schemas.android.com/apk/res/android"
+		android:name="android.permission.INTERNET">
+	</uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".Earthquake" android:label="Earth Quake Update">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Preferences" android:label="Earthquake Preferences">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category  android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+		</activity>
+        <service android:name=".EarthQuakeService" android:enabled="true"  >
+            
+        </service>
+        <receiver
+      
+       android:name="WidgetProvider" >
+       <intent-filter >
+            <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+       </intent-filter>
+
+       <meta-data
+          android:name="android.appwidget.provider"
+          android:resource="@xml/winfo" />
+</receiver>
+        
+        <provider android:name="EarthquakeProvider" android:authorities="com.ennoviabd.app.earthquake" ></provider>
+   		 </application>
+
+</manifest>

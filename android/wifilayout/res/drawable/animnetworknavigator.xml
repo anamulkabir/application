@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false" >
+    <item android:drawable="@drawable/ic_radar1" android:duration="200" />
+    <item android:drawable="@drawable/ic_radar2" android:duration="200" />
+	<item android:drawable="@drawable/ic_radar3" android:duration="200" />
+	<item android:drawable="@drawable/ic_radar4" android:duration="200" />
+	<item android:drawable="@drawable/ic_radar5" android:duration="200" />
+	<item android:drawable="@drawable/ic_radar6" android:duration="200" />
+    <item android:drawable="@drawable/ic_radar7" android:duration="200" />
+	<item android:drawable="@drawable/ic_radar8" android:duration="200" />
+	<item android:drawable="@drawable/ic_radar9" android:duration="200" />
+	<item android:drawable="@drawable/ic_radar10" android:duration="200" />
+	<item android:drawable="@drawable/ic_radar11" android:duration="300" />
+	<item android:drawable="@drawable/ic_radar3" android:duration="200" />
+	<item android:drawable="@drawable/ic_radar12" android:duration="300" />
+	<item android:drawable="@drawable/ic_radar5" android:duration="200" />
+	<item android:drawable="@drawable/ic_radar7" android:duration="200" />
+	<item android:drawable="@drawable/ic_radar11" android:duration="200" />
+    
+
+</animation-list>

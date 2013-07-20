@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_padding"    
+    >
+    <LinearLayout
+    android:layout_width="260dip"
+    android:layout_height="120dip"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/widget_bg">
+    <TextView android:id="@+id/txtWidgetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/black"        
+        android:text="Schedule Task" 
+        />
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"    
+    >
+    
+     <TextView android:id="@+id/txtWidgetdt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="20dip"
+        android:maxWidth="190dip"
+        android:layout_marginTop="5dip"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:text="" 
+        />
+    <TextView android:id="@+id/txtWidgetdt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="20dip"
+        android:maxWidth="190dip"
+        android:layout_marginTop="5dip"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"        
+        android:text="" 
+        />
+    <TextView android:id="@+id/txtWidgett1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="20dip"
+        android:maxWidth="190dip"
+        android:layout_marginTop="5dip"
+        android:textSize="12sp"        
+        android:textColor="@android:color/black"
+        android:text="" 
+        />
+    </LinearLayout>  
+     <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_gravity="right|bottom"
+    >
+    <TextView android:id="@+id/txtAllSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textSize="12sp"
+        android:layout_marginRight="5dip"
+        android:textColor="@android:color/black"        
+        android:text="All" />
+    </LinearLayout>    
+</LinearLayout>
+</RelativeLayout>

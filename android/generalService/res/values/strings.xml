@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="about_menu">About</string>
+  <string name="app_name">HandBook</string>
+  <string name="ok_button">OK</string>
+  <string name="choseItem">Select One</string>
+  <string name="menu_action_event_add">Add</string>
+  <string name="menu_action_catagory">Catagory</string>
+</resources>

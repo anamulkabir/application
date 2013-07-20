@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Network Booster</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblon">ON</string>
+    <string name="lbloff">OFF</string>
+    <string name="lblstart">START</string>
+    <string name="lblrunning">RUNNING</string>
+    <string name="lblmobilenetwork">Mobile Network</string>
+    <string name="lblairplane">Airplane Mode</string>
+    <string name="lblwifi">WiFi State</string>
+    <string name="lblbooster">Network Booster</string>
+    <string name="lblmsgswitchmobile">Switching mobile network</string>
+    <string name="lblcomment">Comment</string>
+    <string name="lblshare">Share</string>
+    <string name="lbllike">Like</string>
+    <string name="lblmenuheadermain">Main</string>
+    <string name="lblmenuheaderextra">Extra</string>
+    <string name="lblmenuheaderfitnessapp">Fitness &amp; Execrise Apps</string>
+    <string name="lblmenuitem1">Network Booster</string>
+    <string name="lblmenuitem2">App &amp; ask Manager</string>
+    <string name="lblmenuitem3">Feedback</string>
+    <string name="lblmenuitem4">Hot Android Apps</string>
+    <string name="lblmenuitem5">Diet Assistant</string>
+    <string name="lblmenuitem6">Push Ups-Fitness Trainer</string>
+    <string name="txtanimmasterinfo1">Searching for New network</string>
+    <string name="txtanimmasterinfo2">Searching for New network1</string>
+    <string name="txtanimmasterinfo3">Searching for New network2</string>
+    <string name="txtanimmasterinfo4">Finalizing Searching</string>
+    <string name="txtanimstaticinfo">This may cause network delay/interrupt data transmission. Please have patience for few moments....</string>
+
+</resources>

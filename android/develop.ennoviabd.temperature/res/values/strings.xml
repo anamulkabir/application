@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ConvertActivity!</string>
+    <string name="app_name">Temperature Converter</string>
+    <color name="mycolor">#3399CC</color>
+    <string name="celsius">to celsius</string>
+    <string name="farenheit">to farenheit</string>
+    <string name="calc">Calculate</string>
+
+</resources>

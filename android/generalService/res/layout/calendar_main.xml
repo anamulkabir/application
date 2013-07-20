@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dip"
+        android:layout_gravity="center_vertical|center_horizontal"
+        
+         >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|center_vertical"                
+         >
+        <ImageButton android:id="@+id/btnPrevious" android:layout_height="wrap_content" android:contentDescription="Previous Month"
+           android:layout_width="wrap_content"  android:background="@drawable/previousmonth"/>
+        <TextView  android:id="@+id/txtMonYear"
+          android:layout_width="160dip" android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal|center_vertical" android:gravity="center_horizontal|center_vertical"
+          android:textSize="15sp" android:text="March, 2013" >
+            
+        </TextView>
+        <ImageButton android:id="@+id/btnNext" android:layout_height="wrap_content" android:contentDescription="Next Month"
+            android:layout_width="wrap_content" android:background="@drawable/nextmonth"/>       
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        >
+   	<com.ennoviabd.generalservice.CalendarView  android:id="@+id/calendar"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" />
+   	</LinearLayout>
+   	</LinearLayout>
+   	<LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dip"
+      android:orientation="horizontal"
+      android:layout_alignParentBottom="true"
+      android:gravity="right|center_vertical"   
+      android:background="@android:drawable/screen_background_light_transparent"
+      >
+    <Button android:id="@+id/btnAddEvent" 
+       android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:background="@drawable/ic_add" 
+        android:layout_marginRight="20dip"
+        >       
+    </Button>
+     <Button android:id="@+id/btnClose"  
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+       android:background="@drawable/ic_close"
+       android:layout_marginRight="8dip"
+        
+        >
+        </Button>
+   </LinearLayout>
+    
+</RelativeLayout>

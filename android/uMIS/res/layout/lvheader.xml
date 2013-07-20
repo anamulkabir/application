@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >    
+      
+      <TextView android:id="@+id/lbl_lv_idn"
+         android:layout_width="80dp"
+         android:text="IDN"
+         android:layout_height="wrap_content"/> 
+     <TextView android:id="@+id/lbl_lv_name"
+         android:layout_width="150dp"
+         android:text="Name"
+         android:layout_height="wrap_content" />
+        
+            
+
+</LinearLayout>

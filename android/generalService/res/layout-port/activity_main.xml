@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+     >
+    <LinearLayout android:id="@+id/lloSearch" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:background="@android:drawable/screen_background_dark_transparent"
+        android:gravity="center"
+        android:layout_marginTop="15dip"        
+        >
+    <EditText android:id="@+id/txtEventFilter" 
+        android:layout_height="wrap_content" android:background="@drawable/textfield_activated_holo_light"        
+        android:layout_width="220dip"
+        android:textColor="@android:color/darker_gray"  				
+  		android:hint="Search Event"
+  		>
+  	<requestFocus />
+ 	</EditText>
+ 	<EditText android:id="@+id/txtDateFilter" 
+        android:layout_height="wrap_content" android:background="@drawable/textfield_activated_holo_light"        
+        android:layout_width="220dip"        
+        android:textColor="@android:color/darker_gray"
+        android:inputType="date"
+        android:maxLength="10"
+        android:visibility="gone"
+  		android:hint="21/02/2013"
+  		>
+  	
+ 	</EditText>
+ 	<Button android:id="@+id/btnDT"
+ 	    android:layout_width="22dip"
+ 	    android:layout_height="22dip"
+ 	    android:background="@drawable/ic_dt"
+ 	    />
+ 	<Button android:id="@+id/btnSearch"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_marginLeft="5dip"
+ 	    android:background="@drawable/ic_menu_search_holo_light"
+ 	    />
+ 	
+ 	</LinearLayout>
+	<ListView
+			android:id="@+id/lstEvent" android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/lloSearch"
+			android:layout_marginTop="16dip"
+			android:stackFromBottom="false"
+			android:transcriptMode="normal"	
+			
+					
+		/>
+	
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dip"
+      android:orientation="horizontal"
+      android:layout_alignParentBottom="true"
+      android:gravity="right|center_vertical"   
+      android:background="@android:drawable/screen_background_light_transparent"
+      >
+    <Button android:id="@+id/btnAddEvent" 
+       android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:background="@drawable/ic_add" 
+        android:layout_marginRight="20dip"
+        >       
+    </Button>
+     <Button android:id="@+id/btnClose"  
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+       android:background="@drawable/ic_close"
+       android:layout_marginRight="8dip"
+        
+        >
+        </Button>
+   </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">    
+      
+      <TextView
+	   android:id="@+id/txt_gv_studid"
+	   android:layout_gravity="left"
+	   android:textSize="5pt"
+	   android:singleLine="true"
+	   android:maxLength="12"	   
+	   android:layout_width="80dp"
+	   android:layout_height="wrap_content"
+	   android:layout_marginLeft="5dip"	 
+	   	  
+	    />      
+        <TextView
+	   android:id="@+id/txt_gv_studname"
+	   android:layout_gravity="left"
+	   android:textSize="5pt"
+	   android:singleLine="true"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+	   android:layout_marginLeft="5dip"
+	   />
+        <TextView
+	   android:id="@+id/txt_gv_edit"
+	   android:layout_gravity="left"
+	   android:textSize="5pt"
+	   android:singleLine="true"
+	   android:background="@android:drawable/btn_plus"
+	   android:textColor="@android:color/black"
+	   android:layout_width="wrap_content"
+	   android:layout_height="30dp"
+	   android:layout_marginLeft="5dip"
+	   android:onClick="onUpdateClick"
+	   android:clickable="true"
+	   android:text=""
+	   />          
+    
+            
+</LinearLayout>

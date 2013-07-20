@@ -1,0 +1,33 @@
+# view AndroidManifest.xml #generated:30
+-keep class com.ennoviabd.generalservice.CalendarActivity { <init>(...); }
+
+# view res/layout/calendar_main.xml #generated:38
+-keep class com.ennoviabd.generalservice.CalendarView { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.ennoviabd.generalservice.ChargeMe { <init>(...); }
+
+# view AndroidManifest.xml #generated:12
+-keep class com.ennoviabd.generalservice.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.ennoviabd.generalservice.MyBroadcastreceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:18
+-keep class com.ennoviabd.generalservice.MyEvent { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.ennoviabd.generalservice.MyService { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.ennoviabd.generalservice.MyWidgetProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.ennoviabd.generalservice.Tabtest { <init>(...); }
+
+# onClick res/layout/event_main.xml #generated:349
+-keepclassmembers class * { *** onCloseClick(...); }
+
+# onClick res/layout/event_main.xml #generated:341
+-keepclassmembers class * { *** onSaveClick(...); }
+
